@@ -25,7 +25,7 @@ export class ThumbnailPipe implements PipeTransform {
         break;
       default:
     }
-    console.log(temp[0] + '-tn' + koko + '.png');
+    // console.log(temp[0] + '-tn' + koko + '.png');
     return temp[0] + '-tn' + koko + '.png';
   }
 

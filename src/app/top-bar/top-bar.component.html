@@ -1,19 +1,19 @@
 <nav>
   <ul>
     <li *ngIf="!mediaService.loggedIn">
-      <a [routerLink] = "'/register'">Register</a>
+      <a [routerLink]="'/register'" routerLinkActive="active">Register</a>
     </li>
     <li *ngIf="!mediaService.loggedIn">
-      <a [routerLink] = "'/login'">Login</a>
+      <a [routerLink]="'/login'" routerLinkActive="active">Login</a>
     </li>
     <li *ngIf="mediaService.loggedIn">
-      <a [routerLink] = "'/logout'">Logout</a>
+      <a [routerLink]="'/logout'" routerLinkActive="active">Logout</a>
     </li>
     <li>
-      <a [routerLink] = "'/front'">Front page</a>
+      <a [routerLink]="'/front'">Front page</a>
     </li>
     <li *ngIf="mediaService.loggedIn">
-      <a [routerLink] = "'/upload'">Upload</a>
+      <a [routerLink]="'/upload'" routerLinkActive="active">Upload</a>
     </li>
   </ul>
 </nav>
